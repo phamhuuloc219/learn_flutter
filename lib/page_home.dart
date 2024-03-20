@@ -15,7 +15,7 @@ class PageHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("MyApp"),
+        title: Text("App Của Tui"),
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -27,8 +27,13 @@ class PageHome extends StatelessWidget {
               _buildButton(context, label: "VD Provider", destination: CounterStateProvider()),
               _buildButton(context, label: "Fruit Store", destination: GioHangApp()),
               _buildButton(context, label: "Form", destination: PageFormMatHang()),
-              //_buildButton(context, label: "GetX", destination: PageGetxCounter()),
-              _buildButton(context, label: "Simple State", destination: SimpleStateHome()),
+
+              Row(
+                children: [
+                  _buildButton(context, label: "GetX", destination: PageGetxCounter()),
+                  _buildButton(context, label: "Simple State", destination: SimpleStateHome()),
+                ],
+              )
             ],
           ),
         ),

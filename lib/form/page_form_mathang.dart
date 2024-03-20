@@ -14,6 +14,7 @@ class PageFormMatHang extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Form Demo"),
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),

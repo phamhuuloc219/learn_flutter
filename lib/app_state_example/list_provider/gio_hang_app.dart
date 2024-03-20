@@ -12,6 +12,7 @@ class GioHangApp extends StatelessWidget {
       create: (context) => AppGioHangState(),
       child: MaterialApp(
         home:GioHangHomePage(),
+        debugShowCheckedModeBanner: false,
       ),
 
     );
@@ -26,6 +27,7 @@ class GioHangHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Fruit Store"),
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         actions: [
 
           Padding(
