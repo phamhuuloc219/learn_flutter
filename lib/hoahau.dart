@@ -17,7 +17,7 @@ class _HoaHauPageState extends State<HoaHauPage> {
             IconButton(
                 onPressed: () {
                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                    content: Text("Share cho ${nameController.text} với"),
+                    content: Text("Share cho ${nameController.text}với"),
                     duration: Duration(seconds: 5),
                     action: SnackBarAction(
                       onPressed: () {
@@ -52,7 +52,7 @@ class _HoaHauPageState extends State<HoaHauPage> {
                   controller: nameController,
                   decoration: InputDecoration(
                       labelText: "Name", hintText: "Nhập tên vào đây"),
-                )
+                ),
               ],
             ),
           ),

@@ -27,13 +27,12 @@ class PageHome extends StatelessWidget {
               _buildButton(context, label: "VD Provider", destination: CounterStateProvider()),
               _buildButton(context, label: "Fruit Store", destination: GioHangApp()),
               _buildButton(context, label: "Form", destination: PageFormMatHang()),
-
               Row(
                 children: [
                   _buildButton(context, label: "GetX", destination: PageGetxCounter()),
                   _buildButton(context, label: "Simple State", destination: SimpleStateHome()),
                 ],
-              )
+              ),
             ],
           ),
         ),
