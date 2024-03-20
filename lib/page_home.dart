@@ -5,7 +5,6 @@ import 'package:learn_flutter/form/page_form_mathang.dart';
 import 'package:learn_flutter/hoahau.dart';
 import 'package:learn_flutter/listview/ListView.dart';
 import 'package:learn_flutter/route/my_route.dart';
-
 import 'app_state_example/list_provider/gio_hang_app.dart';
 
 class PageHome extends StatelessWidget {
@@ -28,7 +27,8 @@ class PageHome extends StatelessWidget {
               _buildButton(context, label: "VD Provider", destination: CounterStateProvider()),
               _buildButton(context, label: "Fruit Store", destination: GioHangApp()),
               _buildButton(context, label: "Form", destination: PageFormMatHang()),
-              _buildButton(context, label: "GetX", destination: PageGetxCounter()),
+              //_buildButton(context, label: "GetX", destination: PageGetxCounter()),
+              _buildButton(context, label: "Simple State", destination: SimpleStateHome()),
             ],
           ),
         ),
